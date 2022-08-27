@@ -58,7 +58,7 @@ function createItems() {
     // const ET_ONE_DAY = ET_ONE_HOUR * 24;
 
     var startDate = null;
-    var reportNum = 64;
+    var reportNum = 72;
     let result = [];
 
     for (var i = 0; i < reportNum; i++) {
@@ -274,7 +274,7 @@ function getStartTime(_date) {
     // const startMsec = msec - (msec % (2 * 70 * 60 * 1000));
     const msec = _date.getTime();
     const startOfTheEorzeaDay = msec - (msec % ltOneHour);
-    const startMsec = startOfTheEorzeaDay - 2 * ltOneHour;
+    const startMsec = startOfTheEorzeaDay - 1 * ltOneHour;
 
     return startMsec;
 };
