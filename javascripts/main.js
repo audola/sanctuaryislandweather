@@ -196,12 +196,12 @@ function showLocalTime() {
     const eorzeaTime = new EorzeaTime();
     const eorzeaTimeStr = eorzeaTime.toString().substr(0, 5);
 
-    console.log("eorzeaTimeStr",eorzeaTimeStr);
+    //console.log("eorzeaTimeStr",eorzeaTimeStr);
 
     if (eorzeaTimeStr == "00:00"
         || eorzeaTimeStr == "08:00"
         || eorzeaTimeStr == "016:00") {
-        console.log("process() is called.");
+        //console.log("process() is called.");
         process();
         //setTimeout(process, 0);
 
